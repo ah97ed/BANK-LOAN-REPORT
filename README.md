@@ -1,12 +1,18 @@
 # BANK LOAN REPORT
 
-# PROBLEM STATEMENT 
 ## DASHBOARD 1: SUMMARY
+
+- **Click on the Picture to see the Dynamic Dashboard**
+
+[![Bank Loan Report- Summary ](https://github.com/user-attachments/assets/aafbb813-6e87-4113-8649-2c0c0df1d3d5)](https://public.tableau.com/app/profile/ahmed.nassar3033/viz/BankLoanReport_17229751035420/DETAILS?publish=yes)
+
+
+
 "In order to monitor and assess our bank's lending activities and performance, we need to create a comprehensive Bank Loan Report. This report aims to provide insights into key loan-related metrics and their changes over time. The report will help us make data-driven decisions, track our loan portfolio's health, and identify trends that can inform our lending strategies.
 
 ## 1. Key Performance Indicators (KPIs) Requirements:
 
-1. **Total Loan Applications :** We need to calculate the total number of loan applications received during a specified period. Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications and track changes Month-over-Month (MoM).
+1. **Total Loan Applications:** We need to calculate the total number of loan applications received during a specified period. Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications and track changes Month-over-Month (MoM).
 
 ``` sql
 -- Total Loan Applications
@@ -16,7 +22,7 @@ SELECT COUNT(id) AS Total_Applications FROM financial_loan;
 SELECT COUNT(id) AS MTD_Total_Applications FROM financial_loan
 WHERE MONTH(issue_date) = 12 and YEAR(issue_date) = 2021;
 
--- Previouse Month to date  (PMTD) Loan Applications
+-- Previous Month to date  (PMTD) Loan Applications
 SELECT COUNT(id) AS PMTD_Total_Applications FROM financial_loan
 WHERE MONTH(issue_date) = 11 and year(issue_date) =2021;
 
@@ -196,6 +202,11 @@ GROUP BY loan_status;
 
 # DASHBOARD 2: OVERVIEW
 
+- **Click on the Picture to see the Dynamic Dashboard**
+
+[![Bank Loan Report- Overview ](https://github.com/user-attachments/assets/fcee775d-960f-4954-9d9c-20da0d00d1bd)](https://public.tableau.com/app/profile/ahmed.nassar3033/viz/BankLoanReport_17229751035420/DETAILS?publish=yes)
+
+
 
 In our Bank Loan Report project, we aim to visually represent critical loan-related metrics and trends using a variety of chart types. These charts will provide a clear and insightful view of our lending operations, facilitating data-driven decision-making and enabling us to gain valuable insights into various loan parameters. Below are the specific chart requirements:
 
@@ -318,6 +329,11 @@ ORDER BY home_ownership;
 ```
 
 # DASHBOARD 3: DETAILS
+
+- **Click on the Picture to see the Dynamic Dashboard**
+
+[![Bank Loan Report- Details](https://github.com/user-attachments/assets/f9c405b5-ad4e-42db-b18f-923d0b7001b2)](https://public.tableau.com/app/profile/ahmed.nassar3033/viz/BankLoanReport_17229751035420/DETAILS?publish=yes)
+
 
 In our Bank Loan Report project, we recognize the need for a comprehensive 'Details Dashboard' that provides a consolidated view of all the essential information within our loan data. This Details Dashboard aims to offer a holistic snapshot of key loan-related metrics and data points, enabling users to access critical information efficiently.
 
